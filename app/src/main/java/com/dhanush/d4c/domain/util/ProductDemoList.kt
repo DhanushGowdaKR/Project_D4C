@@ -10,7 +10,7 @@ fun productDemoList(): List<Product> {
         Product(
             name = "clencera",
             description = "French clay and algae-powered cleanser",
-            highlights = "Skin Tightness > Dry & Dehydrated Skin",
+            highlights = "Skin Tightness . Dry & Dehydrated Skin",
             price = 355.20,
             originalPrice = 444.00,
             rating = 4,

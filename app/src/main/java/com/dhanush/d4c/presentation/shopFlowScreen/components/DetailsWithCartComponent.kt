@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -70,19 +71,35 @@ fun DetailsWithCartComponent(
                     fontWeight = FontWeight.Light
                 )
             }
-            Row() {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Start
+            ) {
                 repeat(rating) {
-                    Icon(
+                    Image(
                         modifier = Modifier
-                            .size(16.dp)
+                            .size(12.dp)
                             .align(Alignment.CenterVertically),
-                        imageVector = Icons.Default.Star,
+                        painter = painterResource(R.drawable.star),
                         contentDescription = ""
                     )
+                    Spacer(Modifier.width(4.dp))
+                }
+                repeat(5-rating) {
+                    Image(
+                        modifier = Modifier
+                            .size(14.dp)
+                            .align(Alignment.CenterVertically),
+                        painter = painterResource(R.drawable.star),
+                        contentDescription = "",
+                        colorFilter = ColorFilter.tint(Color.Black)
+                    )
+                    Spacer(Modifier.width(4.dp))
                 }
                 Spacer(Modifier.width(8.dp))
                 NeuzeitsltstdText(
                     text = "$reviewCount reviews",
+                    textDeclaration = TextDecoration.Underline,
                     color = Color.White,
                     fontWeight = FontWeight.Light
                 )
