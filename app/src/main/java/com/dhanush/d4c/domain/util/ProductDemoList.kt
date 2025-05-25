@@ -25,7 +25,7 @@ fun productDemoList(): List<Product> {
         Product(
             name = "glow",
             description = "French clay and algae-powered cleanser",
-            highlights = "Skin Tightness > Dry & Dehydrated Skin",
+            highlights = "Skin Tightness . Dry & Dehydrated Skin",
             price = 200.00,
             originalPrice = 500.00,
             rating = 3,
@@ -40,7 +40,7 @@ fun productDemoList(): List<Product> {
         Product(
             name = "afterglow",
             description = "French clay and algae-powered cleanser",
-            highlights = "Skin Tightness > Dry & Dehydrated Skin",
+            highlights = "Skin Tightness . Dry & Dehydrated Skin",
             price = 440.00,
             originalPrice = 550.00,
             rating = 4,
