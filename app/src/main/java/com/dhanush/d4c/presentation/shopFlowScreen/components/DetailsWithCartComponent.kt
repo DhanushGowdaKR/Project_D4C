@@ -33,7 +33,7 @@ import com.dhanush.d4c.presentation.shopFlowScreen.components.text.Neuzeitsltstd
 import com.dhanush.d4c.presentation.ui.theme.purple
 
 @Composable
-fun SomeComponent(
+fun DetailsWithCartComponent(
     modifier: Modifier = Modifier,
     price: Double,
     originalPrice: Double,

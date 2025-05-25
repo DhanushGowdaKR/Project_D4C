@@ -76,7 +76,6 @@ fun ProductItem(
                 inStock = inStock,
                 description = description,
                 highlights = highlights,
-                fav = fav,
                 price = price,
                 originalPrice = originalPrice,
                 reviewCount = reviewCount,

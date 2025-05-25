@@ -31,7 +31,6 @@ fun ProductDetailsItem(
     description: String,
     highlights: String,
     price: Double,
-    fav: Boolean,
     originalPrice: Double,
     reviewCount: Int,
     rating: Int
@@ -91,7 +90,7 @@ fun ProductDetailsItem(
                 fontWeight = FontWeight.ExtraBold
             )
             Spacer(Modifier.height(8.dp))
-            SomeComponent(
+            DetailsWithCartComponent(
                 price = price,
                 originalPrice = originalPrice,
                 reviewCount = reviewCount,
